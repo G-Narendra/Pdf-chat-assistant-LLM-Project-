@@ -5,7 +5,7 @@ from langchain.llms import HuggingFaceHub
 from langchain.schema import BaseRetriever  # ✅ Add this import
 from config.settings import HUGGINGFACEHUB_API_TOKEN, EMBEDDING_NAME, LLM_MODEL_NAME
 
-# Load embedding model
+
 embedding = HuggingFaceEmbeddings(model_name=EMBEDDING_NAME)
 
 def generate_answer(question, docs, memory):
@@ -15,7 +15,7 @@ def generate_answer(question, docs, memory):
     repo_id=LLM_MODEL_NAME,
     model_kwargs={"temperature": 0.7, "max_new_tokens": 256},
     huggingfacehub_api_token=HUGGINGFACEHUB_API_TOKEN,
-    task="text-generation"  # Explicitly tell LangChain what the model does
+    task="text-generation" 
     )
     qa_chain = RetrievalQA.from_chain_type(
         llm=llm,

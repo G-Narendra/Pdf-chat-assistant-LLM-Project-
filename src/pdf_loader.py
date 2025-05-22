@@ -11,10 +11,10 @@ import tempfile
 
 from config.settings import HUGGINGFACEHUB_API_TOKEN, EMBEDDING_NAME, LLM_MODEL_NAME
 
-# Load embedding model
+
 embedding = HuggingFaceEmbeddings(model_name=EMBEDDING_NAME)
 
-# Custom concise prompt
+
 prompt_template = """
 You are a concise AI assistant. Answer the question using only the relevant information from the context below. Do not repeat the question. If the answer cannot be found, reply with "Sorry, I don't know."
 
@@ -28,7 +28,7 @@ Answer:"""
 prompt = PromptTemplate(template=prompt_template, input_variables=["context", "question"])
 
 
-# ✅ Add this function
+
 def load_and_split_pdf(uploaded_files) -> List:
     docs = []
     for uploaded_file in uploaded_files:
