@@ -1,0 +1,72 @@
+chroma/
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+venv/
+env/
+.venv/
+.env/
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+
+# VS Code settings
+.vscode/
+
+# PyCharm settings
+.idea/
+
+# Logs and databases
+*.log
+*.sqlite3
+
+# Streamlit
+.streamlit/
+
+# Uploaded PDFs or data files
+data/uploads/
+
+# FAISS indexes or vectorstore data
+vectorstore/faiss_index/
+
+# Chat logs and history
+chat_logs/
+*.json
+
+# Environment variable files
+.env
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+ehthumbs.db
+
+# Misc
+*.bak
+*.swp

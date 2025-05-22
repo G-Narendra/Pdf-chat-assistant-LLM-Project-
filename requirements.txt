@@ -1,0 +1,24 @@
+# Streamlit frontend
+streamlit==1.33.0
+
+# LangChain core
+langchain==0.1.13
+langchain-community==0.0.33
+langchainhub==0.1.15
+
+# Vector database
+faiss-cpu==1.11.0
+
+# PDF processing
+pymupdf==1.23.7
+pypdf
+# Embeddings and LLMs
+huggingface_hub==0.21.4
+transformers==4.40.0
+sentence-transformers==2.6.1
+
+# Environment and utility
+python-dotenv==1.0.1
+tqdm==4.66.2
+numpy==1.26.4
+pandas==2.2.2
